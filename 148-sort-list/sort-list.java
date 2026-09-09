@@ -45,20 +45,12 @@ class Solution {
      }
      }
      while(i!=null&&j!=null){
-        if(i.val<j.val){
+        if(i.val<=j.val){
             temp.next=i;
             i=i.next;
            
         }
-         else if(i.val==j.val){
-            temp.next=i;
-            temp=temp.next;
-             i=i.next;
-            temp.next=j;
-            
-             j=j.next;
-            
-        }
+         
         else{
              temp.next=j;
             j=j.next;
